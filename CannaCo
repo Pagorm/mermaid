@@ -1,0 +1,36 @@
+graph LR
+    subgraph Current Situation
+        A[LicenseCo (Impact Initiatives LLC)] --> B(Vinny - 65%)
+        A --> C(SupportCo - 35%)
+        C --> D(Vinny - 43%)
+        C --> E(Marc's Entity - 43%)
+        C --> F(FK CT Holdings - 14%)
+    end
+
+    subgraph Proposed Transaction
+        G[Buyer] --> H{Acquire 100% of SupportCo OR Use Buyer's own entity as SupportCo}
+        H -- Using Existing SupportCo --> I[SupportCo]
+        I -- Convertible Grid Note --> J[LicenseCo]
+        J -- Loan Payments (Principal & Interest) --> I
+        I -- Control & Security --> J
+        J -- Covenants (Restrictions & Obligations) --> I
+
+        K[Vinny] --> L(3-Year Cooperation)
+
+        I --> M{Form PropCo}
+        M -- Lease/Sublease (Cross-Default) --> J
+        I --> N{Form IP Co, Consulting Co, etc.}
+
+        subgraph Conversion (After 3 Years)
+            J --> O(100% Owned by SupportCo)
+            I --> J
+            K -- Forfeits Remaining Shares --> J
+        end
+
+        subgraph Economics
+            I -- Preferred Return --> J
+            J -- Debt Repayment --> I
+            J -- Advances on Distributions --> I
+            J -- Rent, Royalties, Consulting Fees (Taxable) --> I
+        end
+    end
