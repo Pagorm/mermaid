@@ -30,7 +30,7 @@ importers:
         version: 8.14.4(eslint@9.12.0(jiti@1.21.6))
       '@cypress/code-coverage':
         specifier: ^3.12.30
-        version: 3.13.4(@babel/core@7.25.7)(@babel/preset-env@7.26.7(@babel/core@7.25.7))(babel-loader@9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5)))(cypress@13.15.0)(webpack@5.95.0(esbuild@0.21.5))
+        version: 3.13.4(@babel/core@7.25.7)(@babel/preset-env@7.26.8(@babel/core@7.25.7))(babel-loader@9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5)))(cypress@13.15.0)(webpack@5.95.0(esbuild@0.21.5))
       '@eslint/js':
         specifier: ^9.4.0
         version: 9.12.0
@@ -107,11 +107,11 @@ importers:
         specifier: ^9.4.0
         version: 9.12.0(jiti@1.21.6)
       eslint-config-prettier:
-        specifier: ^9.1.0
-        version: 9.1.0(eslint@9.12.0(jiti@1.21.6))
+        specifier: ^10.0.0
+        version: 10.0.1(eslint@9.12.0(jiti@1.21.6))
       eslint-plugin-cypress:
-        specifier: ^3.3.0
-        version: 3.5.0(eslint@9.12.0(jiti@1.21.6))
+        specifier: ^4.0.0
+        version: 4.1.0(eslint@9.12.0(jiti@1.21.6))
       eslint-plugin-html:
         specifier: ^8.1.1
         version: 8.1.2
@@ -1465,12 +1465,6 @@ packages:
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
-
-  '@babel/preset-env@7.26.7':
-    resolution: {integrity: sha512-Ycg2tnXwixaXOVb29rana8HNPgLVBof8qqtNQ9LE22IoyZboQbGSxI6ZySMdW3K5nAe6gu35IaJefUJflhUFTQ==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
 
   '@babel/preset-env@7.26.8':
     resolution: {integrity: sha512-um7Sy+2THd697S4zJEfv/U5MHGJzkN2xhtsR3T/SWRbVSic62nbISh51VVfU9JiO/L/Z97QczHTaFVkOU8IzNg==}
@@ -3900,11 +3894,6 @@ packages:
     peerDependencies:
       '@babel/core': ^7.4.0 || ^8.0.0-0 <8.0.0
 
-  babel-plugin-polyfill-corejs3@0.10.6:
-    resolution: {integrity: sha512-b37+KR2i/khY5sKmWNVQAnitvquQbNdWy6lJdsr0kmquCKEEUgMKK4SboVM3HtfnZilfjr4MMQ7vY58FVWDtIA==}
-    peerDependencies:
-      '@babel/core': ^7.4.0 || ^8.0.0-0 <8.0.0
-
   babel-plugin-polyfill-corejs3@0.11.1:
     resolution: {integrity: sha512-yGCqvBT4rwMczo28xkH/noxJ6MZ4nJfkVYdoDaC/utLtWrXxv27HVrzAeSbqR8SxDsp46n0YF47EbHoixy6rXQ==}
     peerDependencies:
@@ -5201,16 +5190,16 @@ packages:
     engines: {node: '>=6.0'}
     hasBin: true
 
-  eslint-config-prettier@9.1.0:
-    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
+  eslint-config-prettier@10.0.1:
+    resolution: {integrity: sha512-lZBts941cyJyeaooiKxAtzoPHTN+GbQTJFAIdQbRhA4/8whaAraEh47Whw/ZFfrjNSnlAxqfm9i0XVAEkULjCw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-cypress@3.5.0:
-    resolution: {integrity: sha512-JZQ6XnBTNI8h1B9M7wJSFzc48SYbh7VMMKaNTQOFa3BQlnmXPrVc4PKen8R+fpv6VleiPeej6VxloGb42zdRvw==}
+  eslint-plugin-cypress@4.1.0:
+    resolution: {integrity: sha512-JhqkMY02mw74USwK9OFhectx3YSj6Co1NgWBxlGdKvlqiAp9vdEuQqt33DKGQFvvGS/NWtduuhWXWNnU29xDSg==}
     peerDependencies:
-      eslint: '>=7'
+      eslint: '>=9'
 
   eslint-plugin-html@8.1.2:
     resolution: {integrity: sha512-pbRchDV2SmqbCi/Ev/q3aAikzG9BcFe0IjjqjtMn8eTLq71ZUggyJB6CDmuwGAXmYZHrXI12XTfCqvgcnPRqGw==}
@@ -5838,16 +5827,16 @@ packages:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
     engines: {node: '>=4'}
 
-  globals@13.24.0:
-    resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
-    engines: {node: '>=8'}
-
   globals@14.0.0:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
   globals@15.10.0:
     resolution: {integrity: sha512-tqFIbz83w4Y5TCbtgjZjApohbuh7K9BxGYFm7ifwDR240tvdb7P9x+/9VvUKlmkPoiknoJtanI8UOrqxS3a7lQ==}
+    engines: {node: '>=18'}
+
+  globals@15.15.0:
+    resolution: {integrity: sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -11598,7 +11587,7 @@ snapshots:
       '@babel/helper-create-regexp-features-plugin': 7.26.3(@babel/core@7.26.8)
       '@babel/helper-plugin-utils': 7.26.5
 
-  '@babel/preset-env@7.26.7(@babel/core@7.25.7)':
+  '@babel/preset-env@7.26.8(@babel/core@7.25.7)':
     dependencies:
       '@babel/compat-data': 7.26.8
       '@babel/core': 7.25.7
@@ -11666,7 +11655,7 @@ snapshots:
       '@babel/plugin-transform-unicode-sets-regex': 7.25.9(@babel/core@7.25.7)
       '@babel/preset-modules': 0.1.6-no-external-plugins(@babel/core@7.25.7)
       babel-plugin-polyfill-corejs2: 0.4.12(@babel/core@7.25.7)
-      babel-plugin-polyfill-corejs3: 0.10.6(@babel/core@7.25.7)
+      babel-plugin-polyfill-corejs3: 0.11.1(@babel/core@7.25.7)
       babel-plugin-polyfill-regenerator: 0.6.3(@babel/core@7.25.7)
       core-js-compat: 3.40.0
       semver: 6.3.1
@@ -12214,11 +12203,11 @@ snapshots:
 
   '@cspell/url@8.14.4': {}
 
-  '@cypress/code-coverage@3.13.4(@babel/core@7.25.7)(@babel/preset-env@7.26.7(@babel/core@7.25.7))(babel-loader@9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5)))(cypress@13.15.0)(webpack@5.95.0(esbuild@0.21.5))':
+  '@cypress/code-coverage@3.13.4(@babel/core@7.25.7)(@babel/preset-env@7.26.8(@babel/core@7.25.7))(babel-loader@9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5)))(cypress@13.15.0)(webpack@5.95.0(esbuild@0.21.5))':
     dependencies:
       '@babel/core': 7.25.7
-      '@babel/preset-env': 7.26.7(@babel/core@7.25.7)
-      '@cypress/webpack-preprocessor': 6.0.2(@babel/core@7.25.7)(@babel/preset-env@7.26.7(@babel/core@7.25.7))(babel-loader@9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5)))(webpack@5.95.0(esbuild@0.21.5))
+      '@babel/preset-env': 7.26.8(@babel/core@7.25.7)
+      '@cypress/webpack-preprocessor': 6.0.2(@babel/core@7.25.7)(@babel/preset-env@7.26.8(@babel/core@7.25.7))(babel-loader@9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5)))(webpack@5.95.0(esbuild@0.21.5))
       babel-loader: 9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5))
       chalk: 4.1.2
       cypress: 13.15.0
@@ -12254,10 +12243,10 @@ snapshots:
       tunnel-agent: 0.6.0
       uuid: 8.3.2
 
-  '@cypress/webpack-preprocessor@6.0.2(@babel/core@7.25.7)(@babel/preset-env@7.26.7(@babel/core@7.25.7))(babel-loader@9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5)))(webpack@5.95.0(esbuild@0.21.5))':
+  '@cypress/webpack-preprocessor@6.0.2(@babel/core@7.25.7)(@babel/preset-env@7.26.8(@babel/core@7.25.7))(babel-loader@9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5)))(webpack@5.95.0(esbuild@0.21.5))':
     dependencies:
       '@babel/core': 7.25.7
-      '@babel/preset-env': 7.26.7(@babel/core@7.25.7)
+      '@babel/preset-env': 7.26.8(@babel/core@7.25.7)
       babel-loader: 9.2.1(@babel/core@7.25.7)(webpack@5.95.0(esbuild@0.21.5))
       bluebird: 3.7.1
       debug: 4.3.7(supports-color@8.1.1)
@@ -14569,7 +14558,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-polyfill-corejs3@0.10.6(@babel/core@7.25.7):
+  babel-plugin-polyfill-corejs3@0.11.1(@babel/core@7.25.7):
     dependencies:
       '@babel/core': 7.25.7
       '@babel/helper-define-polyfill-provider': 0.6.3(@babel/core@7.25.7)
@@ -16146,14 +16135,14 @@ snapshots:
     optionalDependencies:
       source-map: 0.6.1
 
-  eslint-config-prettier@9.1.0(eslint@9.12.0(jiti@1.21.6)):
+  eslint-config-prettier@10.0.1(eslint@9.12.0(jiti@1.21.6)):
     dependencies:
       eslint: 9.12.0(jiti@1.21.6)
 
-  eslint-plugin-cypress@3.5.0(eslint@9.12.0(jiti@1.21.6)):
+  eslint-plugin-cypress@4.1.0(eslint@9.12.0(jiti@1.21.6)):
     dependencies:
       eslint: 9.12.0(jiti@1.21.6)
-      globals: 13.24.0
+      globals: 15.15.0
 
   eslint-plugin-html@8.1.2:
     dependencies:
@@ -16964,13 +16953,11 @@ snapshots:
 
   globals@11.12.0: {}
 
-  globals@13.24.0:
-    dependencies:
-      type-fest: 0.20.2
-
   globals@14.0.0: {}
 
   globals@15.10.0: {}
+
+  globals@15.15.0: {}
 
   globalthis@1.0.4:
     dependencies:
